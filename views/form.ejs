@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Msg Board | <%= title %></title>
+</head>
+<body>
+    <form action="/new" method="POST">
+        <h1>Add a new message!</h1>
+    <div>
+        <input type="text" name="user">
+        <textarea id="" name="text"></textarea>
+    </div>
+    <button onClick={handleClick}>Submit</button>
+    </form>
+    <script>
+        handleClick = () =>{
+            console.log("Submit button clicked");
+        }
+    </script>
+</body>
+</html>
